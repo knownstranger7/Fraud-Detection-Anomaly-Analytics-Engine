@@ -8,7 +8,7 @@ st.set_page_config(page_title="Fraud Detection Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/final_fraud_predictions.csv")
+    df = pd.read_csv("data/final_fraud_predictions_sample.csv")
     return df
 
 df = load_data()
